@@ -1,0 +1,275 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+body
+{
+	background:#edeeed;
+}
+.container
+{
+	width:100%;
+	min-height:100vh;
+	overflow:hidden;
+	box-sizing:border-box;
+	padding:1% 4%;
+}
+.container .navbar
+{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.container .navbar .logo
+{
+	width:40px;
+	cursor:pointer;
+	border-radius:50%;
+}
+nav
+{
+	flex:1;
+	text-align:right;
+}
+nav ul li
+{
+	list-style:none;
+	display:inline-block;
+	margin:0 30px 0 0;
+}
+nav ul li::after
+{
+	content:'';
+	width:0%;
+	height:2px;
+	background:#DC9202;
+	display:block;
+	margin:auto;
+	transition:0.5s;
+}
+nav ul li a
+{
+	text-decoration:none;
+	color:#072F5F;
+	font-size:20px;
+}
+nav ul li:hover::after
+{
+	width:100%;
+}
+nav button
+{
+	background:transparent;
+	border:none;
+}
+#btn1,#btn2
+{
+	display:none;
+	cursor:pointer;
+	font-size:20px;
+	z-index:3;
+	position:relative;
+	color:#072F5F;
+}
+.text-box
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:90%;
+	text-align:center;
+	
+}
+.text-box h1
+{
+	color:#072F5F;
+}
+.text-box p
+{
+	padding:5px 0;
+	color:#072F5F;
+	margin:10px 0;
+}
+.text-box .btn
+{
+	background:transparent;
+	padding:3px;
+	border:2px solid #072F5F;
+	position:absolute;
+	text-decoration:none;
+	color:#072F5F;
+	margin:10px 0;
+	display:inline-block;
+	position:relative;
+	padding:5px 10px;
+}
+.text-box .btn:hover
+{
+	color:#DC9202;
+	border:2px solid #DC9202;
+	transition:0.7s;
+	padding:5px 15px;
+}
+.footer 
+{
+	position:absolute;
+	top:90%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+} 
+.footer
+{
+	box-sizing:border-box;
+}
+.footer footer
+{
+	flex:1;
+	text-align:center;
+}
+.footer footer .footer-items li
+{
+	list-style:none;
+	display:inline-block;
+	margin:0 30px 0 0;
+	padding:7px 0;
+}
+.footer footer .footer-items li a
+{
+	text-decoration:none;
+	font-size:30px;
+}
+.fa-instagram
+{
+	padding:0 1px;
+	background:linear-gradient(45deg,#f09433 0%,#e6683c 25%, #dc2743 50%,#cc2366 75%, #bc1888 100%);
+	border-radius:30%;
+	color:#bbb;
+}
+.fa-facebook
+{
+	background:#fff;
+	color:#3b5998;
+	border-radius:50%;
+}
+.fa-youtube
+{
+	color:#ff0000;
+}
+
+
+
+.water
+{
+	position:relative;
+	display:flex;
+}
+.drop
+{
+	position:relative;
+	display:flex;
+	height:150px;
+	width:150px;
+	background:transparent;
+	border-radius:57% 43% 37% 63%/45% 52% 48% 55%;
+	box-shadow:inset 10px 10px 10px rgba(0,0,0,0.5),
+				15px 25px 10px rgba(0,0,0,0.1),
+				15px 20px 20px rgba(0,0,0,0.05),
+				inset -10px -10px 15px rgba(225,225,225,0.9);
+	opacity:0.7;
+}
+.drop::before
+{
+	content:'';
+	position:absolute;
+	top:45px;
+	left:65px;
+	background:#fff;
+	width:20px;
+	height:20px;
+	border-radius:25% 75% 37% 63%/40% 43% 57% 60%;
+}
+
+.drop::after
+{
+	content:'';
+	position:absolute;
+	top:45px;
+	left:95px;
+	background:#fff;
+	width:10px;
+	height:10px;
+	border-radius:57% 43% 37% 63%/48% 37% 63% 52%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px)
+{
+	nav ul 
+	{
+		width:100%;
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:2;
+		display:none;
+		background:white;		
+		text-align:center;
+		height:100vh;
+		display:none;
+	}
+	nav ul div
+	{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	}
+	nav ul div li
+	{
+		display:block;
+		margin:10px 0;
+		padding:20px;
+	}
+	nav ul li a
+	{
+		color:#072F5F;
+	}
+	#btn1
+	{
+		display:inline-block;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fcfcfc; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#ACC6C7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#75B0B2; 
+}
